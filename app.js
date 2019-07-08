@@ -8,7 +8,7 @@ app.get('/', function(req, res){
 });
 
 
-var port = process.env.npm_package_config_port;
+var port = process.env.PORT || process.env.npm_package_config_port;
 app.listen(port, function(){
 	console.log('HTTP server is up on port '+port);
 });
